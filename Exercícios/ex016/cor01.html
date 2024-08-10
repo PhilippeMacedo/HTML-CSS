@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+</head>
+<body>
+   <!-- A forma mais simples de representar uma cor é pelo seu nome-->
+    <h2 style="background-color: blue; color: white;">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nihil obcaecati cupiditate soluta fuga pariatur? Architecto voluptate itaque enim officia, iusto, cum alias deserunt, et laborum minima in optio perferendis!<p>
+    
+    <!-- Temos também a representação por códigos hexadecimais #(16 algarismos)
+    
+    Decimal = 0 1 2 3 4 5  6 7 8 9 
+    Hexa = (0-9) + A B C D E F = 16 dígitos
+
+    0 é algorismo menos signifacativo e F é o algorismo mais significativo
+    Nesse sistema, toda cor é formada por uma combinação de dois algarismos de Vermelho Verde e Azul (RGB) 2R 2G 2B = 6 dígitos dentre 16 algarismos
+
+    00 = nada
+    FF = máximo (255)
+
+    Logo, o azul "total" tem nada de vermelho (R)00, nada de verde (G)00 e o máximo de azul (B)FF = 0000FF
+
+    -->
+
+    <h2 style="background-color: #0000ff; color: #ffffff;">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nihil obcaecati cupiditate soluta fuga pariatur? Architecto voluptate itaque enim officia, iusto, cum alias deserunt, et laborum minima in optio perferendis!<p>
+    
+    <!-- Também podemos usar o sistema RGB "normal"-->
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nihil obcaecati cupiditate soluta fuga pariatur? Architecto voluptate itaque enim officia, iusto, cum alias deserunt, et laborum minima in optio perferendis!<p>
+    
+    <!-- Podemos usar também o sistema HSL
+    Matiz (Hue): Representa a tonalidade da cor em um círculo cromático, variando de 0 a 360 graus. Cada ângulo corresponde a uma cor específica, como vermelho, verde ou azul.
+    Saturação (Saturation): Indica a pureza da cor, variando de 0% (cor desaturada, tons de cinza) a 100% (cor totalmente saturada).
+    Luminosidade (Lightness): Determina o brilho da cor, variando de 0% (preto) a 100% (branco).
+    -->
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nihil obcaecati cupiditate soluta fuga pariatur? Architecto voluptate itaque enim officia, iusto, cum alias deserunt, et laborum minima in optio perferendis!<p>
+    
+    
+    <!-- Existe uma forma que , além de simples, fornece uma enorme variedade, que é combinar as variáveis dentro do visual code: para formar a cor final, teremos o RGB + coluna da transparência (alpha = de 0 a 1)+ coluna de tonalidade. Clicando na barra de cima (RGB como padrão, você muda o sistema de representação dela)
+    
+    A trassparêcia muda em cada sistema de representação de cor:
+    No RGB = a = alpha (de 0 a 1)
+    No hexadecimal = alpha também
+    
+    -->
+
+    <h2 style="background-color:rgba(17, 85, 174, 0.8); color: rgb(210, 198, 66); ">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nihil obcaecati cupiditate soluta fuga pariatur? Architecto voluptate itaque enim officia, iusto, cum alias deserunt, et laborum minima in optio perferendis!<p>
+
+</body>
+</html>

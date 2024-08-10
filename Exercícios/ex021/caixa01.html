@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+
+            /*
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            Vamos usar um shorthand para as configurações básicas da borda */
+
+            border: 20px solid darkslategray ;
+
+        /* Por padrão, o H1 é box-level, mas posso transformá-lo. Posso transformar qualquer elemento de block para inline e vice-versa. 
+        Quando você muda o display online, não faz sentido colocar altura e largura, pois esses serão definidos pelo conteúdo da caixa.
+        Temos também o inline-block. Nesse caso, vai ser um inline com características de block (posso definir altura, largura etc)
+
+
+        */
+
+            display:block;
+
+
+            /* O padding e a margin têm 4 partes: top, right, bottom, left (seguir essa ordem, tipo um relógio) 
+
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            Vamos usar um shorhand ara simplificar. Quando as medidas não forem todas iguais, vai colocando na ordem do relógio acima. Se forem todas iguais, basta colcar uma vez. Se colocar só 2, entende-se que você está definindo o top/bottom e right/left, respectivamente */
+
+            padding: 10px 20px;
+
+           /* 
+           margin-top: 10px;
+           margin-right: 10px;
+           margin-bottom: 10px;
+           margin-left: 10px; */
+
+           margin: 20px auto 20px auto;
+
+           /*
+
+           outline-width: 5px;
+           outline-style: solid;
+           outline-color: rgba(0, 255, 255, 0.669);
+           
+           */
+           
+           outline: 5px dashed red;
+
+
+
+            /* Nunca centralizr assim, no olho, senão vai ficar errado quando mudar o tamanho da janela. Para que a caixar esteja sempre no meio, ela tem que definir sua posição em relação ao tamanho atual da caixa (margin: auto;) 
+            Também podemos criar um outline,e que fica entre a borda e a margem. É uma borda da borda (no devtools não mostra o outline na caixa gráfica).
+
+            */
+
+        }
+
+        a {
+            border-width: 10px;
+            border-style:groove ;
+            border-color: red;
+            display: block;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!--
+    User agent = o navegador que está exibindo o conteúdo. 
+    E todo navegador tem sua configuração básica
+    Inspenciando a página e usando o google devtools, podemos ver os detalhes da caixa e alterar os parâmetros sem mexer no código
+    -->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de caixas box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como isso tudo funciona</p>
+    
+</body>
+</html>

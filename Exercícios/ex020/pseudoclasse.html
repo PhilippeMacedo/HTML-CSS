@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+
+
+    <!--
+
+    Seletores personalizados
+    
+    id = # = ID
+    class = . = CLASS
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+
+    As pseudoclasses dizem respeito  ao ESTADO de um elemento de uma classe.
+    Os psedoelementos dizem respeito ao conteúdo do elemento o classe.
+    
+    -->
+    <style>
+        div {
+            display: inline-block; /* faz com que fique tudo na mesma linha */
+            background-color: lightgrey;
+            text-align: center;
+            border: 1px solid black; /* É um shorthand */
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        div:hover {
+            background-color: yellow;
+        }
+
+       
+    </style>
+    
+</head>
+<body>
+    <!-- "divs" são um espaço qualquer, e ocupam o espaço de ponta a ponta-->
+     <div id="d1">01</div>
+     <div id="d2">02</div>
+     <div id="d3">03</div>
+    
+</body>
+</html>

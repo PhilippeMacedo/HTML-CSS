@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates no HTML5</title>
+</head>
+<body>
+    <h1>Popover</h1>
+    <div id="my-pop" popover> 
+        like 👍🏾 
+      </div>
+      
+      <button popovertarget="my-pop" popovertargetaction="show">
+        Show
+      </button>
+      
+      <button popovertarget="my-pop" popovertargetaction="hide">
+        Hide
+      </button>
+
+      <hr>
+      <h1>Dialog</h1>
+      <button id="openModal">Open</button>
+<dialog id="dialog">
+  <h2>Let's code!</h1>
+	<form method="dialog">
+		<button>Ok!</button>
+	</form>
+
+</dialog>
+
+<script>
+	openModal.onclick = () => {
+    dialog.showModal();
+  }
+</script>
+
+<style>
+  ::backdrop {
+    background: rgb(0 0 0 / 0.7)
+  }
+</style>
+
+
+<hr>
+<h1>Datalist</h1>
+      <label for="list">O melhor 🏆</label>
+      <input id="list" list="my-list" type="text">
+      <datalist id="my-list">
+        <option value="Astro 🚀"></option>
+        <option value="React 🤮"></option>
+        <option value="Vue ✨"></option>
+      </datalist>
+      <hr>
+      <h1>Details</h1>
+      <details open name="panel">
+        <summary>Main info</summary>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas reiciendis amet est debitis nobis natus, error nostrum perferendis modi, placeat officiis. Culpa deleniti cupiditate nobis, quaerat a distinctio ad.
+    </details>
+    <details name="panel">
+        <summary>Style</summary>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam sint adipisci consectetur vel dolorum libero optio voluptatibus omnis quidem! Maxime rem tempora atque explicabo saepe minima omnis sequi fugit!
+    </details>
+    <hr>
+    <h1>Custom Elements</h1>
+    <!-- crie qualquer elemento dando nome 
+com no mínimo 2 palavras. O elemento será entendido 
+como display:inline -->
+<mb-pop>Love it! 💜</mb-pop>
+
+<!-- se quiser fazer via JS -->
+<script>
+	class MyCustomElement extends HTMLElement {
+	  constructor(){
+		  super();
+	  }
+	}
+	
+	customElements.define("mb-pop", MyCustomElement)
+</script>
+<hr>
+<h1>Media Capture</h1>
+
+<!-- irá abrir a câmera -->
+<input type="file" capture>
+<hr>
+<h1>Content Editable</h1>
+<h2 class="title" contenteditable="plaintext-only">
+    Plain text
+  </h2>
+    
+  
+<hr>
+<h1>Fetch Priority</h1>
+<img src="https://github.com/maykbrito.png"
+  width="200" 
+  height="200"
+  loading="lazy"
+  fetchpriority="high" />
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <!-- Vamos usar o CSS local (é sempre no head da página)-->
+    <!-- Para fazer um degradê , não vamos usar um background color, mas background-image: linear-gradeint. Ele vai ter dois parêmetros: 1 - to right or to left, to top, to bottom [ou en graus - deg, que pode ser até negativo], de qual cor para qual cor 
+    Se ficar listrado, é porque está pequeno, tem que fazer uma alteração a altura dele na configraçao global (* {})
+    Pode colocar quantas cores quisermos no degradê.
+    Dá para pegar o gradiente de alguma foto , extrair no adobe e usar
+    Podemos usar o gradiente radial (circle)
+
+    -->
+    <style>
+        * { /* para comentar em CSS é assim "/* " e fechac com */
+            height: 100%;
+        }
+
+        body {
+            background-image: linear-gradient(to left, #A132E8 11%,#B132E3, #E82EAB, #FF2A7E, #FE463A);
+            background-attachment: fixed;
+            color: white;
+        }
+           
+        
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    
+</body>
+</html>

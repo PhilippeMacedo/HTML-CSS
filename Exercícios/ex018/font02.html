@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <!-- Vamos escolher a  fonte (ex.: site dafont). Lembrar de olhar se a fonte oferece minúsculas e acentuações. Copiar o(s) arquivo(s) para a pasta da página. Usar a @font-face. Copiar o nome exato do arquivo (com o tipo do arquivo), [colocar o format do lado - NÃO FUNCIONOU]
+    Tipos de formatos:
+    - opentype (otf) 
+    - trutype (ttf)
+    - embeded-opentype 
+    - truetype-aat (Apple Advanced Typograghy)
+    - svg
+
+    Dá para colocar outros foramatos da mesma fonte, só usar vírgula e repetir url e format
+    -->
+    <style>
+        @font-face {
+            font-family: 'Alice' ;
+            src: url(font/Alice_in_Wonderland_3.ttf);
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1em;
+        }
+        body {
+            font-family: 'Alice', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio maiores impedit, dolore consectetur, perspiciatis suscipit mollitia veritatis eius, cupiditate repellendus maxime fugiat! Ratione debitis, aspernatur assumenda ea cumque nam ipsam.</p>
+    
+</body>
+</html>

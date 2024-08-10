@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <!-- Agora vamos criar um estilo padrão para a tag mark (aplicar-se a todas tags nessa página) -->
+    <style> 
+        mark {
+            background-color: chartreuse;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque </h2>
+    <p>Podemos fazer isso de duas maneiras: <br>
+         1- puramente visual (não semântica) = "&lt;b&gt;  &lt;/b&gt;.Ex.: Nessa frase, tempos um termo em <b> negrito = bold </b> </p>
+         2 - semântica = &lt;strong&gt;  &lt;/strong&gt;Ex.: agora eu usei um <strong>negrito semântico = strong</strong> <br>
+         Visualmente, são iguais, mas somente a segunda é semântica!</p>
+         <p></p>
+    <h2>Itálico/Ênfase</h2>
+    <p>1- puramente visual: Para deixar o termo em <i>itálico</i>, baste usar a tag &lt;i&gt; &lt;/i&gt;. Outra maneira, é selecionar com o mouse o trecho e usar o comando ctrl + shift + p , abrir o "envelope com abreviatura" e digitar i e depois dar enter </p> 
+    2- semântica: tag <em>EM</em> (vamos usar aquele atalho <em>novamente</em>) <br>
+    Alguns comandos quebram a linha,  e outros não (comandos expansíveis e de divisão)
+    <!-- não mais usar <> nas tagas, pois é subentendido-->
+    <h2>Texto marcado</h2>
+     <p>Podemos criar também um <mark>texto marcado </mark> usando a tag <mark>mark</mark> </p>
+     <!-- ou fazendo aquela parada de ir em ctrl + shift + p >>> abb >> tag >> enter -->
+        <p>Infelizmente, a tag mark ainda não é automatizada no visual code, nem temos como escolher a cor do marca-texto no html5, isso porque cor não é sigficado (hmtl), é formatação (css) </p>
+        <p>Quando queremos só fazer uma formatação pontual , de uma coisa específica, podemos usar CSS no meio, com a tag style e selecionar o parâmetro que queremos (depois da tag ): <mark style="background-color: rgb(0, 208, 255);">assim </mark>. Nesse caso, a seleção específica se sobrepõe à seleção global na parte do head (style) </p> 
+        <!-- dá para selcionar com o mouse sobre a cor no visual code-->
+         <p>Todavia, quando fazemos a customização dessa forma, os marks seguintes <mark>não herdam</mark> os atributos </p>
+         <p>Para criar um estilo padrão, você tem que criar uma tagstyle ma head do documento</p>
+    <h2>Texto grande e pequeno</h2>
+        <p>
+            Tem certas coisas que simplesmente não são fáceis de entender. A
+            tag <big>big</big> (que deixava o texto maior) está depreciada (obsoleta) pela HTML5,
+            mas a tag <small>small</small> (que deixa o texto menor) segue firme e forte
+            na vida da linguagem. 
+        </p>
+    
+    <h2>Texto deletado (com risco)</h2>
+     <p>Serve para dizer que o texto deve ser lido, mas não considerado. Basta usar a tag <del>del</del> (a tag strike está depreciada)</p>
+    <h2>Texto inserido</h2>
+        <p>Podemos marcar um texto como <ins>inserido</ins> para dar uma ênfase maior e indicar que ele foi adicionado depois.</p>
+    <h2>Sublinhado</h2>
+    <p>Tag u , <u>sublinhado</u> mas é uma tag não-semântica.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>tag sup - x <sup>2</sup></p>
+    <h2>Texto subscrito - </h2>
+    <p>Tag sub - x <sub>2</sub></p>
+</body>
+</html>

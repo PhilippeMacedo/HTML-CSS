@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte / Pré-formatação</h2>
+    <p>O comando <pre><code>document.getElementById ('teste')</code></pre> é escrito em linguagem JavaScript.
+    </p>
+    <h2>A tag pre</h2>
+    <p>Deixa o texto indentado (colocar geralmente e depois do code)</p>
+    <h2>Outro macete</h2>
+    <p>Você pode seleiconar toda a área que quer remover o espaçamento à esquerda e segurar shift +tab. Se pressionar apenas tab, você aumenta uma tabulação</p>
+    <h2>Citações simples (sem quebra de linha)</h2>
+    <p>Como diria Sócrates: <q>só sei que nada sei</q>. Graficamente (não-semanticamente), é a mesma coisa adicionar aspas, mas semanticamente,  a tag q deixa claro o sentido das aspas (citação)</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Gustavo Guanabara, do Canal Curso em Vídeo:</p>
+    <!-- perceba que nesse caso, a tag fica fora do parágrafo-->
+    <blockquote cite="Curso em vídeo, o livro">
+        Também podemos criar citações mais longas (em bloco) e que tenham um parágrafo só para si. Nesse caso, colocaremos tudo dentro de blockquote e /blockquote e o texto ganha um recuo automaticamente. Podemos também colocar um link para o texto original, usando o parâmetro cite dentro da tag. 
+    <br>
+        Podemos também usar a tag cite para colar o link da citação, visualmente não há diferença, mas internamente, o google , mecanismos de busca em geral e o site, vão saber que é uma citação.
+    
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>É a tag abbr, que serve para dizer ao visitante e aos mecanismos de busca o que a sigla significa. Exemplo: Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!-- fica um sublinhadozinho embaixo e dá para ver o significado quando você passa o mouse por cima (mas pode mudar isso com CSS)-->
+    <h2>Texto invertido</h2>
+    <p> Tag bdo, essa zorra é meio inútil, simplesmente inverte o texto escrito. Quando usar, você escolhe se será <bdo dir="ltr">da  esquerda para direita (não muda nada) </bdo>   ou <bdo dir="rtl"> da direita para esquerda. </bdo> </p>
+</body>
+</html>

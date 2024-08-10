@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Aqui, temos dois tipos de h1 que desejamos que tenham características diferentes: um é o título principal da página, e os demais, que serão capítulos. Para isso, vamos dar uma ID (identificação para o  H1 que queremos que seja diferente do padrão)
+     
+    ID em HTML = id (só pode um elemento)
+    ID em CSS = # (podem vários elementos)
+
+    CLASS em HTML = class
+    CLASS em CSS = .
+
+    Tecnicamente, só podemos usar uam id 1x na página, se quisermos mai de uma elemento com as mesmas configurações personalizadas, temos que criar uma class. Ou seja, id é único e class é múltiplo
+
+    Dá para usar os seletores personalizados em trechos do texto, basta colocar o seletor "span", que é um seletor vazio.
+
+    Também é possível que um seletor possua mais de uma id ou classe (não precisa colcoar vírgula), bem como misturar clase e id no mesmo seletor. Mas lembrando que o id (por ser mais específico) sobrepõpe as configurações do class
+
+    -->
+    <h1 id="principal">Criando sites com HTML e CSS</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico destaque" id="oculto">HTML básico</h2>
+    <p>Lorem ipsum dolor <span class="destaque">sit amet consectetur</span>, adipisicing elit. <span class="basico">Enim vitae, voluptatibus et ad distinctio </span>ab molestias aut ipsum vel ut ex magni ullam reiciendis cumque officia tenetur eos doloribus assumenda.</p>
+    <h2 class="intermediario">HTML intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim vitae, voluptatibus et ad distinctio ab molestias aut ipsum vel ut ex magni ullam reiciendis cumque officia tenetur eos doloribus assumenda.</p>
+    <h2 class="avancado">HTML avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim vitae, voluptatibus et ad distinctio ab molestias aut ipsum vel ut ex magni ullam reiciendis cumque officia tenetur eos doloribus assumenda.</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="basico">CSS básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim vitae, voluptatibus et ad distinctio ab molestias aut ipsum vel ut ex magni ullam reiciendis cumque officia tenetur eos doloribus assumenda.</p>
+    <h2 class="intermediario">CSS intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim vitae, voluptatibus et ad distinctio ab molestias aut ipsum vel ut ex magni ullam reiciendis cumque officia tenetur eos doloribus assumenda.</p>
+    <h2 class="avancado">HTML avançado</h2>
+    <h2 >CSS avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim vitae, voluptatibus et ad distinctio ab molestias aut ipsum vel ut ex magni ullam reiciendis cumque officia tenetur eos doloribus assumenda.</p>
+    
+</body>
+</html>

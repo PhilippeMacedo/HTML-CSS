@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivo diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+
+    <p>A tag picture é tipo a img , mas permite que você tenha várias sources diferentes</p>
+    <picture>
+        <!-- a width padrão vem como min , mas Guanabara sugere mudar para max. O que você dizedo é: carregue a imagem grande, mas se o frame (aba) for menor do que 1050px, carregue a foto m. S3 ficar menor do que 750, carregue a imagem p. Os 50px de folga são por conta da barra de rolagem-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML5</p>
+    <audio preload="none" autoplay controls src="midia/Concierge - ALBIS.mp3" loop>
+        <!-- O padrão é o preload, que só dá play deopis de caregar todo o arquivo. O meta só puxa informações e none não carrega nda-->
+    <!-- Não basta o source, tem que colocar o parâmetro autoplay-->
+      <audio src="midia/Concierge - ALBIS.mp3" controls autoplay ></audio>
+    <!-- O autoplay não funcionou no chrome
+     Formatos universais entre os navegadores: MP3 WAV  e OGG . Não use WAV, é muito pesado  -->
+
+    <p>Tem outra forma (melhor) de botar o aúdio para tocar</p>
+  
+            <source src="midia/Concierge - ALBIS.mp3" type="audio/mp3"> <!-- temos audio/mpeg (mp3) audio/ogg (ogg) e audio/wav (wav)-->
+    </audio>
+
+    
+</body>
+</html>

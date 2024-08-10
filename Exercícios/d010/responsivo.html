@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto; /* faz com que o arquivo fique sempre no meio da tela */
+            /* Para deixar o site realmente responsivo, temos que estabelecer valores e mínimos e máximos */
+            min-width: 280px;
+            max-width: 800px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit vel voluptate nesciunt numquam dolorem, dicta nostrum sequi libero impedit asperiores quia praesentium nulla. Nostrum, incidunt veritatis excepturi nisi ipsa voluptatem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, ducimus magnam consectetur nobis ratione obcaecati in dolore animi natus laborum molestias sint illo mollitia expedita quis. Vel a quae numquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est vitae odio dolorum veritatis numquam a debitis, sunt eius nobis. Obcaecati explicabo sequi pariatur cumque sint rem atque voluptates necessitatibus consequatur?</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi debitis beatae, voluptas pariatur ad voluptatibus harum omnis labore quis consequuntur quam exercitationem quasi ipsa ut reiciendis voluptatem voluptatum nihil quae!</p>
+    </main>
+    
+</body>
+</html>

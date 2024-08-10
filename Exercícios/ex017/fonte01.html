@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* como nem todo dispositivo tem todas as fontes, colocamos em ordem de preferência, nesse caso, se não achara primeira (arial), vai buscar a seguda (helvetica), e se não achar a segunda, busca a terceira (sans-serif). Isso é chamado de "safe combination"
+            */
+
+            /* Há diversas formas para definirmos o tamanho de uma fonte
+
+            a) Medidas absolutas: cm (centímetro) , mm (milímetro) , in (inch = polegada), px (pixel), pt (ponto), pc;
+
+
+            b) Medidas relativas: em (relativo ao tamanho padrão da fonte,ao M maiúsculo dela), ex (relativo à altura da letra x da fonte) , rem (praticamente o em , mas relativo raíz - root - da fonte), vw (viewport width = largura da viwe port = largura da tela = % da tela), vh (viewport height = altura da viewport), %
+
+
+            A recomendação é usar px como medida absoluta e em como medida relativa. 
+            16px é geralmente o tamanho normal da fonte. E em = tamanho normal da fonte. Logo 16px geralmente = 1em
+
+            */
+
+            font-size: 16px;
+
+            /* Peso da fonte (font-weight)
+
+            Fontes simples só possuem um peso (ex.: arial). Vamos testar com a fonte "work sans". 
+            A maioria das fontes naõ tem todas as possibilidades.
+            Os pesos nominnais possíveis são: lighter, normal, bold e bolder 
+            Os pesos numéricos possíveis são: 100-900
+
+            O peso é meio que uma sofisticação do negrito, por ter mais possibilidades. 
+            Itálico é outro font-style que pode ser combinado
+            E o sublinhado (underline) é outro. A sua fonte tem que possibilitar pelo menos essas configurações.            
+            */
+
+        }
+        h1, h2 {
+            
+            /* 
+
+            font-family: Arial, 'Arial Narrow', sans-serif;
+            font-weight: bold;
+            font-size: 1.1em;
+            font-style: italic;
+        
+            Dá muito trabalho ficar configurando assim, por isso usamos uma shorthand (atalho) 
+            MUITO IMPORTANTE:   A declaração é feita na seguinte ordem da font: style , weight, size e family
+            Os parâmetros que for usar do padrão, basta não mencionar
+            */
+            font: italic bolder 1.1em Arial, Arial Narrow, sans-serif ;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti commodi natus earum! Illum eaque natus, quo nihil ea id enim. Doloremque dolore officiis quaerat. Odit eum velit dolorem architecto accusantium!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis temporibus rerum dolores commodi minus pariatur culpa inventore ipsa minima natus cupiditate tempore, necessitatibus modi non rem dignissimos quibusdam, provident mollitia.</p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <p>Listas ordenadas (ordered lists) são aquelas em que a ordem dos elemento do conjunto faz diferença (seria o arranjo da matemática). Quando fazemos listas, é comum que entre um elemento no meio e esculhambe a ordem, para isso ser a tag ol e cada elemento pe li. A formatação padrão é feita em números. Assim , quando um novo elemento for inserido, você não precisa renumerar toda a lista. No html5, fechar o li se tornou opcional. </p>
+    <ol type="I" start="10"> <!-- O parâmetro start exige número, mesmo quando envolva números (segue a numeração do alfabeto)-->
+        <li>Acodar</li>
+        <li>Meditar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Deixar o elemento aberto
+    </ol>
+    <p>A Lista tem um parâmetro opcional (o padrão é números) type em que você pode selecionar entre números, letras e algorismos romanos. Há também o parâmetro start, para dizer em qual númeração a Lista é iniciada</p>
+    <h2>Listas não-ordenadas</h2>
+    <p>Usa-se a tag ul (unordered lists), nesse tipo as ordens dos elementos não faz diferença.</p>
+    <ul type="square">
+        <li>Fechar a tag li</li>
+        <li>Deixar aberta a tag li
+    </ul>
+    <p>Tem o parâmetro type: disc (padrão), circle e square </p>
+    <!-- É possível que dentro de uma lista (ol), tenhamos com elementos (li), mas outras listas (ol)-->
+
+    <h2>Juntando Listas: minhas bandas favoritas por década</h2>
+    <ol>
+        <li>Década de 80</li>
+        <ol type="a">
+            <li> Queen </li>
+            <li>The cure</li>
+        </ol>
+        <li>Década de 90</li>
+        <ol type="a" start="3">
+            <li> Nirvana</li>
+            <li>Alice in Chains</li>
+        </ol>
+
+    </ol>
+
+    <h2>Meus jogos favoritos</h2>
+    <ol style="background-color: rgb(217, 167, 197);">
+        <li>RPG</li>
+            <ul type="square">
+                <li>Chrono Cross</li>
+                    <ul type="circle">
+                        <li>Só não sei qual</li>
+                    </ul>
+                <li>Baldur's Gate 3</li>
+                <li>Diablo III</li>            
+            </ul>
+        <li>Ação</li>
+            <ul type="square">
+                <li>Elden Ring</li>
+                <li>Crash</li>
+            </ul>
+    </ol>
+
+    <h2>Listas de definições</h2>
+    <p>Usamos a tag dl (definition list), dt é o termo a ser definido (definition term) e a descrição é dd (definition description).Por ser semÂntica, ter impact no SEO. </p>
+
+    <dl>
+        <dt>CF</dt>
+        <dd>Constituição Federal</dd>
+        <dt>CC</dt>
+        <dd>Código Civil</dd>
+    </dl>
+    <dl> <h3>Termos em latim</h3>
+        <ul>
+        <li><dt>Erga omgnes</dt></li>
+        <dd>oponível contra todos</dd>
+        <li><dt>Ex tunc</dt>
+        <dd>força retroativa</dd>
+        </ul>
+
+    </dl>
+
+</body>
+</html>

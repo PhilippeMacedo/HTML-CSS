@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h2>
+    <!-- Por padrão, ele vai abrir o link na mesma aba, saindo do seu site, por isso, quando for usar link externo é recomendável usar o parâmetro target "_blank", para que seja aberto o link externo em outra aba. O parâmetro rel serve para avisar (semântica) para onde o link remete (next, prev, author ou external)-->
+    <p>Quer deixar de ser burro? Vai lá no<a href="https://www.google.com.br/" target="_blank" rel="external" > site do Google</a></p>
+    <h2>Usando links internos</h2>
+    <p>Faz relação com o nosso servidor, apontando para o nosso próprio site.
+        Antes de criar um link interno, temos que ter outras páginas, por isso, vamos criar um arquivo aqui dentro antes.
+    </p>
+    <hr>
+    <!-- Você pode segurar ctrl + espaço para localizar o hiperlink dentro da pasta-->
+    <p>Está é a primeira página, do site. Se quiser, vocÊ pode acesssar também a minha <a href="pag002.html" rel="next">segunda página</a> </p>
+    <p>Perceba que quando faço um link interno, eu não preciso indicar a URL inteira, desde que ambos os arquivos estejam na mesma pasta.</p>
+    <!-- next é a espécie de relação interna que diz que você está sendo remetido para a página seguinte. 
+     Em regra, quando você remete ao próprio site, você não quer abrir uma nova aba (blank), mas usar mesma (self).-->
+     <p>Você também pode acessar nossa <a href="noticias/pag003.html">página de notícias</a></p>
+     <h1>Links para Download</h1>
+     <!-- Quando você coloca # no href significa que está vazio-->
+      <p>Se só usarmos a âncora, ele vai apenas abir o arquivo, temos que usar o parâmetro download "nome do arquivo.formato" + type="application/pdf" </p>
+      <!-- Olhar qual o type correto para cada tipo de arquivo em "https://www.iana.org/assignments/media-types/media-types.xhtml"-->
+     <ul>
+      
+        <li><a href="Material PDF/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+       <img src="istockphoto-1163683003-612x612.jpg" alt="mulher gringa"> <li><a href="Material PDF/Histórico do processo.pdf">Baixar histórico do processo</a></li>
+        <li><a href="Material PDF/Nova Pasta Compactada.zip" download="Material PDF/Nova Pasta Compactada.zip" type="application/zip">Os dois arquivos em foramato zip</a></li>
+     </ul>
+
+
+  
+</body>
+</html>
